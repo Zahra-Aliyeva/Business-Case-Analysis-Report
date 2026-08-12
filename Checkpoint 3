@@ -1,0 +1,11 @@
+## Root-Cause Analysis
+
+I compared marketing performance across channels, channel mix, months, and regions to understand what was driving the overall change.
+
+The overall conversion rate increased from 5.71% in 2024 to 5.95% in 2025. The improvement was consistent across all four channels: Email increased from 6.48% to 6.76%, Organic Search from 8.23% to 8.57%, Paid Search from 4.74% to 4.94%, and Paid Social from 3.07% to 3.18%.
+
+I also checked for Simpson's Paradox by comparing the overall result with channel-level performance. The paradox was not present: the overall conversion rate increased and every individual channel also improved. Channel mix remained almost unchanged between the two years, so a major mix-shift does not appear to explain the result.
+
+To check seasonality, I compared each month in 2025 with the same month in 2024 rather than comparing consecutive months. All six months from July through December showed higher conversion rates in 2025.
+
+Regional results also followed a similar pattern without a major regional outlier. Overall, the improvement appears to be broad-based across channels and months rather than being driven by one specific region, channel, or seasonal period.
