@@ -1,65 +1,95 @@
 # Business-Case-Analysis-Report
 
-# Marketing Performance Analysis — July–December 2024 vs. July–December 2025
-
-## Business Question
-Did marketing performance improve between July–December 2024 and the same period in 2025, and what factors might explain the change?
+# Marketing Performance Case Study — July–December 2024 vs. 2025
 
 ## Overview
-This project walks through a complete marketing performance case study: KPI selection, SQL-based data extraction, root-cause analysis, dashboard visualization, and a written summary with concrete recommendations.
 
-## KPIs Selected
-- **Conversion Rate** — how effectively sessions turn into conversions
-- **ROAS (Return on Ad Spend)** — revenue generated per dollar of marketing spend
-- **CPA (Cost per Acquisition)** — average marketing cost per conversion
-- **Revenue** — total revenue generated from marketing activity
-- **Channel Mix %** — how sessions are distributed across channels
+This project looks at marketing performance between July–December 2024 and the same period in 2025.
 
-Together these KPIs cover overall performance, marketing efficiency, and channel distribution. They were compared across channels, regions, campaigns, and matching months in 2024 vs. 2025 to rule out misleading conclusions caused by seasonality or channel-mix shifts.
+The main question was whether performance actually improved and what was behind the change. I looked at overall results first, then compared channels, channel mix, months, and regions to make sure the result was not caused by a mix shift or seasonality.
 
-## Data Extraction (SQL)
-Five queries form the backbone of the analysis: overall year-over-year performance, conversion rate by channel, channel mix by year, same-month year-over-year comparison, and regional performance by channel.
+## KPIs
 
-📄 [SQL queries](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Checkpoint%202.sql)
+I used five main metrics for the analysis:
 
-## Root-Cause Analysis
-Key findings:
-- Overall conversion rate rose from **5.71%** (2024) to **5.95%** (2025)
-- Every channel improved on its own: Email (6.48% → 6.76%), Organic Search (8.23% → 8.57%), Paid Search (4.74% → 4.94%), Paid Social (3.07% → 3.18%)
-- No Simpson's Paradox — the aggregate trend matches the channel-level trend
-- Channel mix stayed nearly unchanged between the two years, so a mix-shift does not explain the gain
-- All six months (July–December) showed a higher conversion rate in 2025 versus the same month in 2024, ruling out a seasonal explanation
-- No standout regional outlier
+- **Conversion Rate** — measures how many sessions resulted in conversions
+- **ROAS** — measures revenue generated from marketing spend
+- **CPA** — measures the average cost of acquiring a conversion
+- **Revenue** — measures revenue generated from marketing activity
+- **Channel Mix %** — shows how sessions were distributed across channels
 
-📄 [Root-cause analysis](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Checkpoint%203)
+## SQL Analysis
 
-## Visualization
-The dashboard breaks performance down by channel, region, and month, with each chart tied to a specific claim from the analysis.
+I used SQL to extract and compare the data needed for the analysis. The queries covered:
 
-🖼️ [Dashboard screenshot](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Screenshot%20checkpoint%204.png)
-📊 [Full Power BI dashboard (.pbix)](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Checkpoint%204.pbix)
+- Overall marketing performance by year
+- Conversion rate by channel
+- Channel mix by year
+- Conversion rate for the same months across 2024 and 2025
+- Conversion rate by region and channel
 
-## Findings Summary
-The improvement is broad-based rather than narrow. The overall conversion rate climbed from 5.71% to 5.95%, and the gain shows up across every channel and every month in the comparison window, with no single region driving it. Channel mix held steady, so the result reflects genuine efficiency gains rather than a shift toward higher-converting channels.
+[View SQL queries](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Checkpoint%202.sql)
 
-📄 [Full written summary](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Checkpoint%205)
+## Key Findings
+
+The overall conversion rate increased from **5.71% in 2024 to 5.95% in 2025**.
+
+The improvement was also visible across all four channels:
+
+- **Email:** 6.48% → 6.76%
+- **Organic Search:** 8.23% → 8.57%
+- **Paid Search:** 4.74% → 4.94%
+- **Paid Social:** 3.07% → 3.18%
+
+I also checked the channel mix, and it remained almost unchanged between the two years. This means the improvement was not mainly caused by a large shift in traffic between channels.
+
+For seasonality, I compared each month with the same month in the previous year. Conversion rate was higher in every month from July through December in 2025.
+
+The regional results were also relatively consistent, with no single region standing out as the main reason for the overall change.
+
+[View root-cause analysis](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Checkpoint%203)
+
+## Dashboard
+
+I created a Power BI dashboard to present the main findings visually. The visuals focus on the overall conversion rate, channel performance, channel mix, and monthly comparison between the two years.
+
+[Dashboard screenshot](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Screenshot%20checkpoint%204.png)
+
+[Power BI dashboard](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Checkpoint%204.pbix)
+
+## Summary
+
+The analysis shows that marketing performance improved in 2025. The increase was consistent across all channels and months, while the channel mix remained stable.
+
+Based on the results, the improvement does not appear to be driven by one particular channel, region, or seasonal period.
+
+[View written summary](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Checkpoint%205)
 
 ## Recommendations
-1. **Improve Paid Social conversion.** Paid Social sits at the bottom of the four channels (3.07% → 3.18%). Target: raise it to at least 3.5% in the next reporting period by testing new audiences, creatives, and landing pages before scaling budget.
-2. **Protect Organic Search and Email performance.** These two channels lead at 8.57% and 6.76% respectively. Keep current investment levels and use their performance as the benchmark when evaluating the rest of the channel mix.
 
-📄 [Recommendations](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Checkpoint%206)
+### 1. Improve Paid Social conversion
 
-## Tools Used
-SQL (PostgreSQL/SQLite syntax), Power BI Desktop, Excel / Google Sheets
+Paid Social has the lowest conversion rate among the four channels, increasing from **3.07% to 3.18%**. I recommend setting a target to increase its conversion rate to at least **3.5%** in the next reporting period. I would test different audiences, ad creatives, and landing pages before increasing its budget.
+
+### 2. Maintain Organic Search and Email performance
+
+Organic Search and Email have the highest conversion rates, at **8.57%** and **6.76%** respectively. I recommend maintaining the current investment in these channels and using their performance as a benchmark when evaluating the other channels.
+
+[View recommendations](https://github.com/Zahra-Aliyeva/Business-Case-Analysis-Report/blob/main/Checkpoint%206)
+
+## Tools
+
+- SQL
+- Power BI Desktop
+- Excel / Google Sheets
 
 ## Repository Structure
-```
-├── Checkpoint 2.sql                # SQL extraction & aggregation queries
-├── Checkpoint 3                    # Root-cause analysis write-up
-├── Checkpoint 4.pbix               # Power BI dashboard file
-├── Screenshot checkpoint 4.png     # Dashboard screenshot
-├── Checkpoint 5                    # Written summary
-├── Checkpoint 6                    # Actionable recommendations
+
+```text
+├── Checkpoint 2.sql
+├── Checkpoint 3
+├── Checkpoint 4.pbix
+├── Screenshot checkpoint 4.png
+├── Checkpoint 5
+├── Checkpoint 6
 └── README.md
-```
