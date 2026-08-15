@@ -102,5 +102,5 @@ These recommendations are based on the channel-level results rather than the ove
 
 - SQL
 - Power BI Desktop
-- Excel / Google Sheets
+- Excel 
 
