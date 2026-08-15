@@ -83,13 +83,6 @@ Organic Search and Email have the highest conversion rates, at **8.57%** and **6
 - Power BI Desktop
 - Excel / Google Sheets
 
-## Repository Structure
 
-```text
-├── Checkpoint 2.sql
-├── Checkpoint 3
-├── Checkpoint 4.pbix
-├── Screenshot checkpoint 4.png
-├── Checkpoint 5
 ├── Checkpoint 6
 └── README.md
